@@ -34,7 +34,7 @@ def is_module_installed(module_name):
         return False
 
 # Check and install 'idc-index' if not installed
-if not is_module_installed('idc-index'):
+if not is_module_installed('idc-index>=0.2.9'):
     slicer.util.pip_install('idc-index')
 
 # Local application imports
